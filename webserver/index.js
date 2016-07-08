@@ -1,29 +1,38 @@
 'use strict';
 
+var Apigeon = require( 'apigeon' );
+var http = require( 'http' );
 var express = require( 'express' );
 
-var app = express();
+module.exports = function () {
 
-var getParameters = function () {
-    var params = {};
-    process.argv.forEach( function ( val ) {
-        params[ val.split( '=' )[ 0 ].replace( /^\-\-/i, '' ) ] = val.split( '=' )[ 1 ];
+    var app = express();
+
+    // Define server
+    var server = http.createServer( app );
+    var apigeon = new Apigeon( app, server, {
+        apis: __dirname + '/apis'
     } );
 
-    params.port = params.port || 8080;
-    params.static = params.static || __dirname + '/../build';
+    // Add middlewares
+    app.use( require( 'compression' )() );
 
-    return params;
+    app.use( apigeon.rest() );
+
+    return {
+        start: function ( done ) {
+            server.listen( '8000', function () {
+                console.log( 'Application started...' );
+                done();
+            } );
+        },
+        stop: function ( done ) {
+            if ( server.listening ) {
+                server.close( done );
+            } else {
+                done();
+            }
+        }
+    };
+
 };
-
-var params = getParameters();
-
-// Define static server
-app = require( './static' )( app, params.static );
-
-// Define back office server
-app = require( './webservice' )( app );
-
-app.listen( params.port, function () {
-    console.log( 'Application started...' );
-} );

@@ -2,8 +2,7 @@
 
 var gulp = require( 'gulp' );
 var runSequence = require( 'run-sequence' );
-var fs = require( 'fs' );
-var url = require( 'url' );
+var server = require( './webserver' )();
 
 gulp.task( 'build', function ( callback ) {
     runSequence( 'clean-build',
@@ -15,11 +14,17 @@ gulp.task( 'build', function ( callback ) {
         callback );
 } );
 
+gulp.task( 'webserver', function ( callback ) {
+    server.stop( function () {
+        server.start( callback );
+    } );
+} );
+
 gulp.task( 'test', function ( callback ) {
     runSequence( 'build',
         'api',
-        'webserver',
         'watch',
+        'webserver',
         callback );
 } );
 
@@ -110,42 +115,6 @@ module.exports = {
                 src: './src/styles/**/*',
                 tasks: [ 'styles' ]
             } ]
-        },
-        'webserver': {
-            taskname: 'core__browser-sync',
-            options: {
-                files: [ './build/**/*' ],
-                watchOptions: {
-                    debounceDelay: 1000
-                },
-                server: {
-                    baseDir: './build',
-                    index: 'index.html',
-                    middleware: [
-
-                        // ModRewrite clone
-                        function ( req, res, next ) {
-                            var oUrl = url.parse( req.url );
-
-                            // Check if physical file
-                            if ( !fs.existsSync( './build/' + oUrl.pathname ) ) {
-
-                                // Check if part of browserSync
-                                if ( oUrl.pathname.indexOf( 'browser-sync' ) === -1 ) {
-                                    console.log( 'Url: ' + req.url + ' not found, redirected' );
-                                    req.url = '/' + 'index.html';
-                                }
-                            }
-                            next();
-                        }
-                    ]
-                },
-                port: 8000,
-                https: false,
-                notify: true,
-                ghostMode: false,
-                open: false
-            }
         }
     }
 };

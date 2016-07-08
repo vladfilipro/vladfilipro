@@ -16,10 +16,11 @@
         "url": "https://gitlab.com/vladfilipro/vladfilip/issues"
     },
     "dependencies": {
-        "angular": "~1.5.5",
-        "angular-ui-router": "~0.2.18",
-        "express": "~4.13.3",
-        "compression": "~1.6.0"
+        "angular": "1.5.5",
+        "angular-ui-router": "0.2.18",
+        "express": "4.14.0",
+        "compression": "1.6.2",
+        "apigeon": "https://github.com/vladfilipro/apigeon.git"
     },
     "devDependencies": {
         "rigs": "*",
@@ -27,12 +28,11 @@
         "rig-sass": "*",
         "rig-angular": "*",
         "rig-font-awesome": "*",
-        "run-sequence": "~1.1.5",
-        "browserify-ngannotate": "~2.0.0"
+        "run-sequence": "1.2.2",
+        "browserify-ngannotate": "2.0.0"
     },
     "scripts": {
-        "rigs": "./node_modules/.bin/rigs && ./node_modules/.bin/gulp init",
-        "test": "npm outdated --long=true && ./node_modules/.bin/gulp test",
-        "start": "node ./webserver --port=8080"
+        "start": "npm outdated && ./node_modules/.bin/rigs && ./node_modules/.bin/gulp init",
+        "test": "./node_modules/.bin/gulp test"
     }
 }
