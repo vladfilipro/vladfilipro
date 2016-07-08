@@ -1,0 +1,45 @@
+{
+    "list": [ {
+        "name": "Project 1",
+        "visibility": "public",
+        "type": "Npm Package",
+        "priority": "high",
+        "lastUpdate": "2016-03-03",
+        "description": "some description",
+        "status": "planning",
+        "version": {
+            "latest": "1.0.0",
+            "stable": "1.0.0"
+        },
+        "icon": "cog",
+        "image": ""
+    }, {
+        "name": "Project 2",
+        "visibility": "private",
+        "type": "Npm Package",
+        "priority": "medium",
+        "lastUpdate": "2016-03-03",
+        "description": "some description",
+        "status": "development",
+        "version": {
+            "latest": "1.0.0",
+            "stable": "1.0.0"
+        },
+        "icon": "file",
+        "image": ""
+    }, {
+        "name": "Project 3",
+        "visibility": "private",
+        "type": "Npm Package",
+        "priority": "low",
+        "lastUpdate": "2016-03-03",
+        "description": "some description",
+        "status": "released",
+        "version": {
+            "latest": "1.0.0",
+            "stable": "1.0.0"
+        },
+        "icon": "file",
+        "image": ""
+    } ]
+}

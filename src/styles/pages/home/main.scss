@@ -1,0 +1,13 @@
+@import "searchbox.scss";
+
+.home {
+    display   : block;
+    position  : relative;
+    margin    : auto;
+    text-align: center;
+    width     : 100%;
+
+    .logo {
+        width: 300px;
+    }
+}

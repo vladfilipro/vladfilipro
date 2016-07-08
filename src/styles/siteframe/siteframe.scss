@@ -1,0 +1,25 @@
+// Load pages
+@import "../pages/main.scss";
+
+// Load components
+@import "../header/main.scss";
+@import "../footer/main.scss";
+
+content,
+footer,
+header {
+    display: table-row;
+    width  : 100%;
+}
+
+content {
+    height: 100%;
+}
+
+header {
+    font-size: 12px;
+}
+
+footer {
+    font-size: 10px;
+}

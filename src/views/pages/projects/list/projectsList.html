@@ -1,0 +1,7 @@
+<div class="projects-list-categories">
+    <a ng-repeat="filter in filters" ui-sref="root.projects.list({category: filter.url})" ui-sref-active="projects-list-menu-item-active" class="projects-list-menu-item">{{filter.label}} ( {{filter.count}} )</a>
+    <searchbox></searchbox>
+</div>
+<div class="projects-list-grid">
+    <project-block ng-repeat="project in projects track by $index" data-project="project"></project-block>
+</div>

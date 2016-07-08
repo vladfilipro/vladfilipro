@@ -1,0 +1,196 @@
+<style>
+    @keyframes animation-keyframes-carriage {
+        25% {
+            transform: translateX(30px);
+        }
+        50% {
+            transform: translateX(60px);
+        }
+        75% {
+            transform: translateX(90px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+    @keyframes animation-keyframes-letter {
+        100% {
+            fill: #000000;
+            opacity: 1;
+        }
+    }
+
+    @keyframes animation-keyframes-letter-carriage {
+        0% {
+            fill: #000000;
+            opacity: 0;
+        }
+        25%,
+        50%,
+        75% {
+            fill: #000000;
+            opacity: 1;
+        }
+        100% {
+            fill: #FFFFFF;
+            opacity: 1;
+        }
+    }
+
+    @keyframes animation-keyframes-label {
+        100% {
+            height: 18px;
+        }
+    }
+
+    .logo-animation-carriage {
+        animation: animation-keyframes-carriage 1s steps(1);
+        animation-fill-mode: forwards;
+    }
+
+    .logo-animation-letter-v {
+        opacity: 0;
+        animation: animation-keyframes-letter-carriage 1s 0s steps(1);
+        animation-fill-mode: forwards;
+    }
+
+    .logo-animation-letter-l {
+        opacity: 0;
+        animation: animation-keyframes-letter 0.25s 0.25s steps(1);
+        animation-fill-mode: forwards;
+    }
+
+    .logo-animation-letter-a {
+        opacity: 0;
+        animation: animation-keyframes-letter 0.25s 0.5s steps(1);
+        animation-fill-mode: forwards;
+    }
+
+    .logo-animation-letter-d {
+        opacity: 0;
+        animation: animation-keyframes-letter 0.25s 0.75s steps(1);
+        animation-fill-mode: forwards;
+    }
+
+    .logo-animation-label {
+        height: 0px;
+        animation: animation-keyframes-label 0.25s 1.25s;
+        animation-fill-mode: forwards;
+    }
+
+    .logo-animation-sub-letters {
+        opacity: 0;
+        animation: animation-keyframes-letter-carriage 0.25s 1.5s;
+        animation-fill-mode: forwards;
+    }
+</style>
+
+<svg style="width:100%;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 119 53" xml:space="preserve">
+    <defs>
+        // Letter size: 18px x 24px . Container size: 30px x 36px
+
+        <g id="V">
+            <rect x="0" y="0" width="5" height="5" />
+            <rect x="0" y="6" width="5" height="5" />
+            <rect x="0" y="12" width="5" height="5" />
+
+            <rect x="6" y="18" width="5" height="5" />
+
+            <rect x="12" y="0" width="5" height="5" />
+            <rect x="12" y="6" width="5" height="5" />
+            <rect x="12" y="12" width="5" height="5" />
+        </g>
+
+        <g id="L">
+            <rect x="0" y="0" width="5" height="5" />
+            <rect x="0" y="6" width="5" height="5" />
+            <rect x="0" y="12" width="5" height="5" />
+            <rect x="0" y="18" width="5" height="5" />
+
+            <rect x="6" y="18" width="5" height="5" />
+            <rect x="12" y="18" width="5" height="5" />
+        </g>
+
+        <g id="A">
+            <rect x="0" y="6" width="5" height="5" />
+            <rect x="0" y="12" width="5" height="5" />
+            <rect x="0" y="18" width="5" height="5" />
+
+            <rect x="6" y="0" width="5" height="5" />
+            <rect x="6" y="12" width="5" height="5" />
+
+            <rect x="12" y="6" width="5" height="5" />
+            <rect x="12" y="12" width="5" height="5" />
+            <rect x="12" y="18" width="5" height="5" />
+        </g>
+
+        <g id="D">
+            <rect x="0" y="0" width="5" height="5" />
+            <rect x="0" y="6" width="5" height="5" />
+            <rect x="0" y="12" width="5" height="5" />
+            <rect x="0" y="18" width="5" height="5" />
+
+            <rect x="6" y="0" width="5" height="5" />
+            <rect x="6" y="18" width="5" height="5" />
+
+            <rect x="12" y="6" width="5" height="5" />
+            <rect x="12" y="12" width="5" height="5" />
+        </g>
+
+        <g id="BLOCK">
+            <rect x="0" y="0" width="5" height="5" />
+            <rect x="0" y="6" width="5" height="5" />
+            <rect x="0" y="12" width="5" height="5" />
+            <rect x="0" y="18" width="5" height="5" />
+            <rect x="0" y="24" width="5" height="5" />
+            <rect x="0" y="30" width="5" height="5" />
+
+            <rect x="6" y="0" width="5" height="5" />
+            <rect x="6" y="6" width="5" height="5" />
+            <rect x="6" y="12" width="5" height="5" />
+            <rect x="6" y="18" width="5" height="5" />
+            <rect x="6" y="24" width="5" height="5" />
+            <rect x="6" y="30" width="5" height="5" />
+
+            <rect x="12" y="0" width="5" height="5" />
+            <rect x="12" y="6" width="5" height="5" />
+            <rect x="12" y="12" width="5" height="5" />
+            <rect x="12" y="18" width="5" height="5" />
+            <rect x="12" y="24" width="5" height="5" />
+            <rect x="12" y="30" width="5" height="5" />
+
+            <rect x="18" y="0" width="5" height="5" />
+            <rect x="18" y="6" width="5" height="5" />
+            <rect x="18" y="12" width="5" height="5" />
+            <rect x="18" y="18" width="5" height="5" />
+            <rect x="18" y="24" width="5" height="5" />
+            <rect x="18" y="30" width="5" height="5" />
+
+            <rect x="24" y="0" width="5" height="5" />
+            <rect x="24" y="6" width="5" height="5" />
+            <rect x="24" y="12" width="5" height="5" />
+            <rect x="24" y="18" width="5" height="5" />
+            <rect x="24" y="24" width="5" height="5" />
+            <rect x="24" y="30" width="5" height="5" />
+        </g>
+
+    </defs>
+
+    <rect x="0" y="0" width="119" height="35" style="fill:#FFFFFF" />
+    <use xlink:href="#BLOCK" x="0" y="0" class="logo-animation-carriage" />
+    <g>
+        <use xlink:href="#V" x="6" y="6" class="logo-animation-letter-v" />
+        <use xlink:href="#L" x="36" y="6" class="logo-animation-letter-l" />
+        <use xlink:href="#A" x="66" y="6" class="logo-animation-letter-a" />
+        <use xlink:href="#D" x="96" y="6" class="logo-animation-letter-d" />
+    </g>
+    <rect x="0" y="35" width="119" class="logo-animation-label" />
+    <g style="font-size:14;font-family:'Arial';fill:#FFFFFF;" transform="translate(7 0)" class="logo-animation-sub-letters">
+        <text x="0" y="49">F</text>
+        <text x="24" y="49">I</text>
+        <text x="48" y="49">L</text>
+        <text x="72" y="49">I</text>
+        <text x="96" y="49">P</text>
+    </g>
+</svg>

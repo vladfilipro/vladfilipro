@@ -1,0 +1,11 @@
+@import "list/projectsList.scss";
+@import "projectBlock.scss";
+
+.projects {
+    display   : block;
+    position  : relative;
+    margin    : auto;
+    text-align: center;
+    width     : 95%;
+    padding   : 1em 0;
+}

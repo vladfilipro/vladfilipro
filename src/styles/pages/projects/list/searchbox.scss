@@ -1,0 +1,39 @@
+.projects-list-categories {
+    .searchbox {
+        font-size : 12px;
+        display   : block;
+        text-align: center;
+        margin    : 0;
+        padding   : 0;
+        position  : absolute;
+        top       : 0;
+        right     : 0;
+        height    : 100%;
+        max-width : 20em;
+        width     : 100%;
+
+        input {
+            padding         : 0.3em 2em 0.3em 1em;
+            height          : 100%;
+            outline         : 0;
+            border          : 0;
+            border-left     : 2px solid #FFFFFF;
+            box-sizing      : border-box;
+            font-size       : 1.2em;
+            background-color: darken(#2C3E50,3%);
+            width           : 100%;
+            max-width       : 30em;
+            color           : #FFFFFF;
+        }
+
+        .fa-search {
+            position   : absolute;
+            color      : #ffffff;
+            font-size  : 1.9em;
+            padding    : 0.25em;
+            margin-left: -1.5em;
+            top        : 0;
+            right      : 0;
+        }
+    }
+}

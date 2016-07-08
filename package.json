@@ -1,0 +1,38 @@
+{
+    "name": "vladfilip",
+    "version": "1.0.0",
+    "description": "vladfilip.ro codebase",
+    "author": "Vlad Filip ( vlad.filip.dev@gmail.com )",
+    "license": "MIT",
+    "main": "/src/index.js",
+    "keywords": [
+        "node"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://gitlab.com/vladfilipro/vladfilip.git"
+    },
+    "bugs": {
+        "url": "https://gitlab.com/vladfilipro/vladfilip/issues"
+    },
+    "dependencies": {
+        "angular": "~1.5.5",
+        "angular-ui-router": "~0.2.18",
+        "express": "~4.13.3",
+        "compression": "~1.6.0"
+    },
+    "devDependencies": {
+        "rigs": "*",
+        "rig-javascript": "*",
+        "rig-sass": "*",
+        "rig-angular": "*",
+        "rig-font-awesome": "*",
+        "run-sequence": "~1.1.5",
+        "browserify-ngannotate": "~2.0.0"
+    },
+    "scripts": {
+        "rigs": "./node_modules/.bin/rigs && ./node_modules/.bin/gulp init",
+        "test": "npm outdated --long=true && ./node_modules/.bin/gulp test",
+        "start": "node ./webserver --port=8080"
+    }
+}

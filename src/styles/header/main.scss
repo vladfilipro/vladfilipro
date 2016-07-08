@@ -1,0 +1,72 @@
+.header {
+    display         : table;
+    width           : 100%;
+    height          : 4em;
+    position        : relative;
+    background-color: #2C3E50;
+
+    a {
+        color          : #ffffff;
+        text-decoration: none;
+    }
+
+    a.header-button {
+        cursor: pointer;
+    }
+
+    .header-button-active {
+        background-color: #80B4E8;
+    }
+
+    a.header-button:hover {
+        @extend .header-button-active;
+    }
+
+    .header-text {
+        padding: 0 0.5em;
+        width  : 7em;
+
+        span,
+        span.fa {
+            font-size     : 1em;
+            display       : inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    .fa {
+        font-size     : 1.5em;
+        display       : inline-block;
+        vertical-align: middle;
+    }
+
+    .header-section {
+        display       : table-cell;
+        vertical-align: middle;
+        text-align    : center;
+        position      : relative;
+    }
+
+    .header-section-minimenu {
+        width: 4em;
+    }
+
+    .header-section-logo {
+        width: 12em;
+
+        img {
+            height: 3em;
+        }
+
+    }
+
+    .header-section-space {
+        width: auto;
+    }
+}
+
+.menu {
+    display         : table;
+    width           : 100%;
+    background-color: darken(#2C3E50, 6%);
+}

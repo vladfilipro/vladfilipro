@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 119 53" xml:space="preserve">
+    <defs>
+        // Letter size: 18px x 24px . Container size: 30px x 36px
+
+        <g id="V">
+            <rect x="0" y="0" width="5" height="5"/>
+            <rect x="0" y="6" width="5" height="5"/>
+            <rect x="0" y="12" width="5" height="5"/>
+
+            <rect x="6" y="18" width="5" height="5"/>
+
+            <rect x="12" y="0" width="5" height="5"/>
+            <rect x="12" y="6" width="5" height="5"/>
+            <rect x="12" y="12" width="5" height="5"/>
+        </g>
+
+        <g id="L">
+            <rect x="0" y="0" width="5" height="5"/>
+            <rect x="0" y="6" width="5" height="5"/>
+            <rect x="0" y="12" width="5" height="5"/>
+            <rect x="0" y="18" width="5" height="5"/>
+
+            <rect x="6" y="18" width="5" height="5"/>
+            <rect x="12" y="18" width="5" height="5"/>
+        </g>
+
+        <g id="A">
+            <rect x="0" y="6" width="5" height="5"/>
+            <rect x="0" y="12" width="5" height="5"/>
+            <rect x="0" y="18" width="5" height="5"/>
+
+            <rect x="6" y="0" width="5" height="5"/>
+            <rect x="6" y="12" width="5" height="5"/>
+
+            <rect x="12" y="6" width="5" height="5"/>
+            <rect x="12" y="12" width="5" height="5"/>
+            <rect x="12" y="18" width="5" height="5"/>
+        </g>
+
+        <g id="D">
+            <rect x="0" y="0" width="5" height="5"/>
+            <rect x="0" y="6" width="5" height="5"/>
+            <rect x="0" y="12" width="5" height="5"/>
+            <rect x="0" y="18" width="5" height="5"/>
+
+            <rect x="6" y="0" width="5" height="5"/>
+            <rect x="6" y="18" width="5" height="5"/>
+
+            <rect x="12" y="6" width="5" height="5"/>
+            <rect x="12" y="12" width="5" height="5"/>
+        </g>
+
+        <g id="F">
+            <rect x="0" y="0" width="5" height="5"/>
+            <rect x="0" y="6" width="5" height="5"/>
+            <rect x="0" y="12" width="5" height="5"/>
+            <rect x="0" y="18" width="5" height="5"/>
+
+            <rect x="6" y="0" width="5" height="5"/>
+            <rect x="12" y="0" width="5" height="5"/>
+
+            <rect x="6" y="12" width="5" height="5"/>
+            <rect x="12" y="12" width="5" height="5"/>
+        </g>
+
+        <g id="I">
+            <rect x="6" y="0" width="5" height="5"/>
+            <rect x="6" y="6" width="5" height="5"/>
+            <rect x="6" y="12" width="5" height="5"/>
+            <rect x="6" y="18" width="5" height="5"/>
+        </g>
+
+        <g id="P">
+            <rect x="0" y="0" width="5" height="5"/>
+            <rect x="0" y="6" width="5" height="5"/>
+            <rect x="0" y="12" width="5" height="5"/>
+            <rect x="0" y="18" width="5" height="5"/>
+
+            <rect x="6" y="0" width="5" height="5"/>
+            <rect x="12" y="0" width="5" height="5"/>
+            <rect x="12" y="6" width="5" height="5"/>
+            <rect x="6" y="12" width="5" height="5"/>
+            <rect x="12" y="12" width="5" height="5"/>
+        </g>
+
+        <g id="NULL">
+            <rect x="0" y="0" width="5" height="5"/>
+            <rect x="0" y="6" width="5" height="5"/>
+            <rect x="0" y="12" width="5" height="5"/>
+            <rect x="0" y="18" width="5" height="5"/>
+
+            <rect x="6" y="0" width="5" height="5"/>
+            <rect x="6" y="6" width="5" height="5"/>
+            <rect x="6" y="12" width="5" height="5"/>
+            <rect x="6" y="18" width="5" height="5"/>
+
+            <rect x="12" y="0" width="5" height="5"/>
+            <rect x="12" y="6" width="5" height="5"/>
+            <rect x="12" y="12" width="5" height="5"/>
+            <rect x="12" y="18" width="5" height="5"/>
+        </g>
+
+        <g id="BLOCK">
+            <rect x="0" y="0" width="5" height="5"/>
+            <rect x="0" y="6" width="5" height="5"/>
+            <rect x="0" y="12" width="5" height="5"/>
+            <rect x="0" y="18" width="5" height="5"/>
+            <rect x="0" y="24" width="5" height="5"/>
+            <rect x="0" y="30" width="5" height="5"/>
+
+            <rect x="6" y="0" width="5" height="5"/>
+            <rect x="6" y="6" width="5" height="5"/>
+            <rect x="6" y="12" width="5" height="5"/>
+            <rect x="6" y="18" width="5" height="5"/>
+            <rect x="6" y="24" width="5" height="5"/>
+            <rect x="6" y="30" width="5" height="5"/>
+
+            <rect x="12" y="0" width="5" height="5"/>
+            <rect x="12" y="6" width="5" height="5"/>
+            <rect x="12" y="12" width="5" height="5"/>
+            <rect x="12" y="18" width="5" height="5"/>
+            <rect x="12" y="24" width="5" height="5"/>
+            <rect x="12" y="30" width="5" height="5"/>
+
+            <rect x="18" y="0" width="5" height="5"/>
+            <rect x="18" y="6" width="5" height="5"/>
+            <rect x="18" y="12" width="5" height="5"/>
+            <rect x="18" y="18" width="5" height="5"/>
+            <rect x="18" y="24" width="5" height="5"/>
+            <rect x="18" y="30" width="5" height="5"/>
+
+            <rect x="24" y="0" width="5" height="5"/>
+            <rect x="24" y="6" width="5" height="5"/>
+            <rect x="24" y="12" width="5" height="5"/>
+            <rect x="24" y="18" width="5" height="5"/>
+            <rect x="24" y="24" width="5" height="5"/>
+            <rect x="24" y="30" width="5" height="5"/>
+        </g>
+
+        <symbol id="VLAD">
+            <use xlink:href="#BLOCK" x="90" y="0"/>
+            <use xlink:href="#V" x="6" y="6"/>
+            <use xlink:href="#L" x="36" y="6"/>
+            <use xlink:href="#A" x="66" y="6"/>
+            <use xlink:href="#D" x="96" y="6" style="fill:#FFFFFF"/>
+        </symbol>
+
+        <g id="FILIP_BG">
+            <rect x="0" y="0" width="119" height="18"/>
+        </g>
+        <g id="FILIP_LETTERS" style="font-size:14;font-family:'Arial';">
+            <text x="0" y="14">F</text>
+            <text x="24" y="14">I</text>
+            <text x="48" y="14">L</text>
+            <text x="72" y="14">I</text>
+            <text x="96" y="14">P</text>
+        </g>
+
+        <symbol id="FILIP">
+            <use xlink:href="#FILIP_BG" x="0" y="0" style="fill:#000000"/>
+            <use xlink:href="#FILIP_LETTERS" x="8" y="0" style="fill:#FFFFFF"/>
+        </symbol>
+
+        <symbol id="LOGO">
+            <use xlink:href="#VLAD" x="0" y="0"/>
+            <use xlink:href="#FILIP" x="0" y="36"/>
+        </symbol>
+    </defs>
+
+    <rect x="0" y="0" width="119" height="53" style="fill:#FFFFFF"/>
+    <use xlink:href="#LOGO" x="0" y="0"/>
+
+</svg>

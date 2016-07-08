@@ -1,0 +1,103 @@
+// General
+@mixin desaturate() {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+@mixin invert() {
+    -webkit-filter: invert(100%);
+    -moz-filter: invert(100%);
+    -o-filter: invert(100%);
+    filter: invert(100%);
+}
+@mixin shadow($props) {
+    -webkit-box-shadow: $props;
+    -moz-box-shadow   : $props;
+    -o-box-shadow     : $props;
+    box-shadow        : $props;
+}
+
+// Breakpoints
+@mixin bp-xl {
+     @media only screen and (max-width: 60em){
+        @content;
+    }
+}
+@mixin bp-l {
+     @media only screen and (max-width: 40em){
+        @content;
+    }
+}
+@mixin bp-m {
+     @media only screen and (max-width: 30em){
+        @content;
+    }
+}
+@mixin bp-s {
+     @media only screen and (max-width: 30em){
+        @content;
+    }
+}
+
+// EXAMPLE
+// @include bp-m {
+//     width: 10%;
+// }
+
+// Animations
+@mixin keyframes($animation-name) {
+     @-webkit-keyframes #{$animation-name}{
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+         @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+         @content;
+    }
+    @-o-keyframes #{$animation-name} {
+         @content;
+    }
+    @keyframes #{$animation-name} {
+         @content;
+    }
+}
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation   : #{$str};
+    -ms-animation    : #{$str};
+    -o-animation     : #{$str};
+    animation        : #{$str};
+}
+
+// Examples
+// @include keyframes(slide-down) {
+//   0% { opacity: 1; }
+//   90% { opacity: 0; }
+// }
+//
+// .element {
+//   width: 100px;
+//   height: 100px;
+//   background: black;
+//   @include animation('slide-down 5s 3');
+// }
+
+// Transitions
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition   : $args;
+    -ms-transition    : $args;
+    -o-transition     : $args;
+    transition        : $args;
+}
+
+// Examples
+// a {
+//   color: gray;
+//   @include transition(color .3s ease);
+//   &:hover {
+//     color: black;
+//   }
+// }

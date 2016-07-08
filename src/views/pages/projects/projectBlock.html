@@ -1,0 +1,43 @@
+<article class="project-block">
+    <div class="project-block-top-row">
+        <a href="/" class="project-block-title"><h3>{{project.name}}</h3></a>
+    </div>
+    <div class="project-block-middle-row">
+        <div class="project-block-middle-left-col">
+            <span ng-if="!project.image" class="fa" ng-class="'fa-'+project.icon"></span>
+            <img ng-if="project.image" ng-src='{{project.image}}' />
+        </div>
+        <div class="project-block-middle-right-col">
+            <ul>
+                <li>
+                    <span class="fa fa-key"></span>
+                    <span>Visibility</span>
+                    <div ng-class="'project-block-visibility-'+project.visibility">{{project.visibility}}</div>
+                </li>
+                <li>
+                    <span class="fa fa-file-o"></span>
+                    <span>Type</span>
+                    <div>{{project.type}}</div>
+                </li>
+                <li>
+                    <span class="fa fa-exclamation-circle"></span>
+                    <span>Priority</span>
+                    <div ng-class="'project-block-priority-'+project.priority">{{project.priority}}</div>
+                </li>
+                <li>
+                    <span class="fa fa-clock-o"></span>
+                    <span>Last update</span>
+                    <div>{{project.lastUpdate}}</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="project-block-description-row">
+        <span>{{project.description}}</span>
+    </div>
+    <div class="project-block-bottom-row">
+        <span>Versions</span>
+        <span>Latest:&nbsp;{{project.version.latest}}<br/>Stable:&nbsp;{{project.version.stable}}</span>
+        <span ng-class="'project-block-status-'+project.status">{{project.status}}</span>
+    </div>
+</article>

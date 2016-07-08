@@ -1,0 +1,34 @@
+body,
+html {
+    width : 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image : url('/img/grid.svg');
+    background-repeat: repeat;
+    font-family      : Arial,sans-serif;
+
+    .content {
+        display: table;
+        height : 100%;
+        width  : 100%;
+    }
+
+    a {
+        outline: 0;
+    }
+}
+
+// Variables
+$fa-font-path: '/fonts/font-awesome/';
+
+// Mixins
+@import "mixins.scss";
+
+// Load modules
+@import "font-awesome/font-awesome.scss";
+
+// Load internal modules
+@import "siteframe/siteframe.scss";
