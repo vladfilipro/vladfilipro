@@ -1,38 +1,29 @@
 'use strict';
 
 var Apigeon = require( 'apigeon' );
-var http = require( 'http' );
-var express = require( 'express' );
 
 module.exports = function () {
-
-    var app = express();
+    var regexFile = new RegExp( '^\/(.*)$', 'i' );
 
     // Define server
-    var server = http.createServer( app );
-    var apigeon = new Apigeon( app, server, {
-        apis: __dirname + '/apis'
+    var apigeon = new Apigeon( {
+        paths: {
+            routes: __dirname + '/routes'
+        },
+        rewrite: function ( url ) {
+            var results;
+            results = url.match( regexFile );
+            if ( results && results[ 1 ] ) {
+                return '/file?path=' + encodeURIComponent( results[ 1 ] );
+            }
+            return url;
+        }
     } );
 
     // Add middlewares
-    app.use( require( 'compression' )() );
+    apigeon.attach( apigeon.middlewares.session() );
+    apigeon.attach( apigeon.middlewares.logs() );
+    apigeon.enableREST();
 
-    app.use( apigeon.rest() );
-
-    return {
-        start: function ( done ) {
-            server.listen( '8000', function () {
-                console.log( 'Application started...' );
-                done();
-            } );
-        },
-        stop: function ( done ) {
-            if ( server.listening ) {
-                server.close( done );
-            } else {
-                done();
-            }
-        }
-    };
-
+    return apigeon;
 };

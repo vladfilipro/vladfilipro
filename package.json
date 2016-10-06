@@ -4,7 +4,6 @@
     "description": "vladfilip.ro codebase",
     "author": "Vlad Filip ( vlad.filip.dev@gmail.com )",
     "license": "MIT",
-    "main": "/src/index.js",
     "keywords": [
         "node"
     ],
@@ -16,9 +15,8 @@
         "url": "https://gitlab.com/vladfilipro/vladfilip/issues"
     },
     "dependencies": {
-        "angular": "1.5.5",
-        "angular-ui-router": "0.2.18",
-        "express": "4.14.0",
+        "angular": "1.5.8",
+        "angular-ui-router": "0.3.1",
         "compression": "1.6.2",
         "apigeon": "https://github.com/vladfilipro/apigeon.git"
     },
@@ -28,8 +26,8 @@
         "rig-sass": "*",
         "rig-angular": "*",
         "rig-font-awesome": "*",
-        "run-sequence": "1.2.2",
-        "browserify-ngannotate": "2.0.0"
+        "browserify-ngannotate": "2.0.0",
+        "run-sequence": "1.2.2"
     },
     "scripts": {
         "start": "npm outdated && ./node_modules/.bin/rigs && ./node_modules/.bin/gulp init",
